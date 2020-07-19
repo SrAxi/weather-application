@@ -23,8 +23,6 @@ const showForecast = () => {
 }
 const toggleLoading = (show = false) => loading.style.display = show ? 'block' : 'none'
 
-console.log(weatherForm)
-
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
     toggleLoading(true)
@@ -32,13 +30,10 @@ weatherForm.addEventListener('submit', (e) => {
     hideError()
 
     const location = searchInput.value
-    console.log('submit', location)
 
     if (location) {
         fetchWeather(location)
             .then((data) => {
-                console.log('DATA FETCHED', data)
-
                 if (data.error) {
                     errorText.textContent = data.error
                     showError()

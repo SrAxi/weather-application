@@ -48,9 +48,6 @@ app.get('/about', (req, res) => {
 app.get('/weather', (req, res) => {
     const address = req.query.address
 
-    console.log(address)
-
-
     if (!address) {
         return res.send({
             error: 'Hey! You have to send us an Address!',
