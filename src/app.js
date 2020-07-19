@@ -64,7 +64,7 @@ app.get('/weather', (req, res) => {
             })
         }
 
-        forecast(coordinates, (error, { data: forecastData }) => {
+        forecast(coordinates, (error, { data: forecastData, img }) => {
             if (error) {
                 console.log('[forecast] - ERROR:', error)
 
@@ -75,10 +75,12 @@ app.get('/weather', (req, res) => {
 
             console.log('Location:', location)
             console.log('Forecast:', forecastData)
+            console.log('Img:', img)
 
             res.send({
                 location,
                 forecast: forecastData,
+                img,
             })
         })
     })
