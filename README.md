@@ -1,6 +1,9 @@
 # Weather Application
 Fullstack Weather Application
 
+### Deployed with Heroku
+- [sraxi-weather-application.herokuapp.com](https://sraxi-weather-application.herokuapp.com/)
+
 ### BE Stack
 - NodeJs
 - ExpressJs
