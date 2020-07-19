@@ -1,7 +1,7 @@
 {
   "name": "node-web-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Weather application built with NodeJs",
   "main": "index.js",
   "scripts": {
     "start": "node src/app.js",
@@ -9,11 +9,14 @@
     "deploy": "git push heroku master"
   },
   "keywords": [],
-  "author": "",
+  "author": "Riccardo Polacci",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "hbs": "^4.1.1",
     "postman-request": "^2.88.1-postman.23"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
