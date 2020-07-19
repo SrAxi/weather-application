@@ -1,5 +1,5 @@
 const fetchWeather = address =>
-    fetch(`http://localhost:3000/weather?address=${address}`).then(response => response.json())
+    fetch(`/weather?address=${address}`).then(response => response.json())
 
 
 const weatherForm = document.querySelector('form')
